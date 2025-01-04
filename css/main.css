@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -10,9 +10,9 @@
 
 html {
   scroll-behavior: smooth;
-  background: rgba(28, 117, 255, 1);
+  background: #fffefd;
 
-  color: rgba(255, 255, 255, 1);
+  color: #0d060a;
 }
 
 body {
@@ -114,7 +114,7 @@ a {
   background: transparent;
   display: flex;
   height: 80px;
-  background: rgba(105, 58, 212, 1);
+  background: transparent;
 }
 .header__background {
   position: absolute;
@@ -126,7 +126,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: rgba(105, 58, 212, 1);
+  background: #fea900;
 }
 .header.is-open .header__background {
   left: 0;
@@ -177,7 +177,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 20px 16px;
+  padding: 28px 36px 0;
   position: relative;
 }
 
@@ -201,22 +201,22 @@ a {
 
   border-radius: 0px 0px;
   gap: 32px;
-  background: rgba(105, 58, 212, 1);
+  background: #fea900;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Nunito;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: #fff7d8;
+  color: #000;
 }
 
 .header.is-open {
@@ -234,13 +234,13 @@ a {
     display: none;
   }
   .header-title {
-    margin-right: 420px;
+    margin-right: 310px;
   }
   .header {
     width: 100%;
 
     height: 80px;
-    padding: 10px 20px 10px 0;
+    padding: 39px 20px 0px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,7 +275,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 61px;
+    gap: 38px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -285,13 +285,14 @@ a {
   .navigation__link {
     display: flex;
 
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #fea900;
 
     text-decoration: none;
   }
@@ -311,25 +312,24 @@ a {
   width: 375px;
   height: 812px;
 
-  padding: 120px 16px 0px;
+  padding: 114px 27px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/Hero.png");
+  background-image: url("/img/home/Hero.png");
   margin: auto;
 }
 .home-title {
-  font-family: Paytone One;
-  font-size: 40px;
+  font-family: Gasoek One;
+  font-size: 46px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 59.8px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 292px;
+  color: #fea900;
+  -webkit-text-stroke: 4px #0d060a;
+  padding-bottom: 477px;
 }
 
 .home__google-button_link {
@@ -344,20 +344,20 @@ a {
     width: 1440px;
     height: 759px;
 
-    padding: 160px;
-    background-image: url("/image/home/Hero\ \(1\).png");
+    padding: 150px 256px;
+    background-image: url("/img/home/Hero\ \(1\).png");
   }
 
   .home-title {
-    font-family: Paytone One;
-    font-size: 88px;
+    font-family: Gasoek One;
+    font-size: 96px;
     font-weight: 400;
-    line-height: 114.4px;
+    line-height: 124.8px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 803px;
-    padding-bottom: 108px;
+
+    padding-bottom: 269px;
   }
 
   .home__google-button_link {
@@ -367,32 +367,30 @@ a {
   }
 }
 .about {
-  padding: 80px 16px 0px;
+  padding: 40px 32px 0px;
   margin: auto;
   width: 375px;
-  height: 917px;
+  height: 1046px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about/About\ the\ App.png");
+  background-image: url("/img/about/About\ the\ App.png");
 }
 
 .about-title {
-  font-family: Paytone One;
+  font-family: Gasoek One;
   font-size: 32px;
   font-weight: 400;
   line-height: 41.6px;
-  text-align: left;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fea900;
 }
 
 .about-text {
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -400,34 +398,34 @@ a {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 160px 160px 0;
+    padding: 160px 256px 0;
     margin: auto;
     width: 1440px;
-    height: 810px;
+    height: 679px;
 
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-image: url("/image/about/About\ the\ App\ \(1\).png");
+    background-image: url("/img/about/About\ the\ App\ \(1\).png");
   }
 
   .about-title {
-    font-family: Paytone One;
-    font-size: 48px;
+    font-family: Gasoek One;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 62.4px;
+    line-height: 52px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .about-text {
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -435,151 +433,90 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    padding: 80px 0 0;
-    width: 448px;
+    padding: 40px 0 0;
+    width: 544px;
   }
 }
 
 .play {
   width: 375px;
-  height: 509px;
+  height: 391px;
 
   margin: auto;
   padding: 80px 16px 0;
-}
-.play {
-  position: relative;
-}
-
-.play::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/image/play/Reviews\ \(1\).png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/play/Reviews.png");
 }
 
-.play {
-  position: relative;
-  z-index: 2;
-}
 .play-list {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .play-item {
-  width: 327px;
-  height: 147px;
-  padding: 0px 32px 24px 32px;
-  border-radius: 24px;
-  border: 2px solid rgba(255, 255, 255, 1);
+  width: 309px;
+  height: 169px;
+  border-radius: 2px;
   margin: 0 8px;
+  border: 2px solid #0d060a;
 }
 .play-text-bold {
-  font-family: Nunito;
-  font-size: 18px;
+  font-family: Montserrat;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 27px;
-  text-align: center;
+  line-height: 30px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  width: 263px;
-  height: 35px;
-  padding: 4px 0px;
-  border-radius: 12px;
-  background: rgba(116, 4, 141, 1);
-  border: 2px solid rgba(255, 255, 255, 1);
-  border-top: none;
+  color: #fffefd;
+  background: #9046b0;
+  border-bottom: 2px solid #0d060a;
+  padding: 16px 24px;
 }
 
 .play-text {
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding-top: 16px;
+  padding: 10px 24px;
 }
 
 @media screen and (min-width: 1200px) {
   .play {
     width: 1440px;
-    height: 684px;
-    padding: 160px 160px 0;
-  }
-  .play::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/image/play/Reviews\ \(3\).png");
+    height: 661px;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
+    padding: 160px 240px 0;
+    background-image: url("/img/play/Reviews\ \(1\).png");
   }
+
   .play-list {
-    padding-top: 80px;
-  }
-  .play-item {
-    width: 352px;
-    height: 159px;
-    padding: 0px 32px 24px 32px;
-    border-radius: 24px;
-    border: 2px solid rgba(255, 255, 255, 1);
-    margin: 0 10px;
-  }
-  .play-text-bold {
-    font-family: Nunito;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    width: 288px;
-    height: 38px;
-  }
-
-  .play-text {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding-top: 16px;
+    padding-top: 40px;
+    padding-bottom: 16px;
   }
 }
 
 .gallery {
   width: 375px;
-  height: 754px;
+  height: 734px;
 
   margin: auto;
   padding: 80px 15px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/gallery/Gallery.png");
+  background-image: url("/img/gallery/Gallery.png");
 }
 
 .gallery__list {
   width: 345px;
-  padding-top: 40px;
+  padding-top: 20px;
 
   margin: auto;
 }
@@ -598,31 +535,18 @@ a {
   object-fit: cover;
   object-position: center;
 }
-.slick-prev:before {
-  content: "←";
+.gallery-button-container {
   display: none;
 }
-.slick-next:before {
-  content: "→";
-  display: none;
-}
+
 @media screen and (min-width: 1200px) {
-  .slick-prev:before {
-    content: url("/image/gallery/Arrow.png");
-    display: flex;
-    margin-left: -45px;
-  }
-  .slick-next:before {
-    content: url("/image/gallery/Arrow\ \(1\).png");
-    display: flex;
-  }
   .gallery {
     width: 1440px;
-    height: 808px;
+    height: 1004px;
 
     margin: auto;
-    padding: 78px 160px 0;
-    background-image: url("/image/gallery/Gallery\ \(1\).png");
+    padding: 160px 256px 0;
+    background-image: url("/img/gallery/Gallery\ \(1\).png");
   }
 
   .gallery__item {
@@ -636,114 +560,124 @@ a {
 
   .gallery__list {
     width: auto;
-    padding-top: 82px;
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  .gallery-button-container {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 32;
+  }
+
+  .gallery-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    -webkit-transition: scale 0.3s ease;
+    transition: scale 0.3s ease;
+  }
+
+  .gallery-button:hover {
+    scale: 120%;
+  }
+
+  .button-visible {
+    display: none !important;
   }
 }
 .features {
   width: 375px;
-  height: 1634px;
+  height: 1316px;
 
-  padding: 80px 16px 0;
+  padding: 80px 32px 0;
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/features/Advantages.png");
+  background-image: url("/img/features/Advantages.png");
 }
 .features-list {
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  align-items: start;
+  gap: 20px;
+  align-items: center;
 }
 .features-item {
-  width: 343px;
+  width: 309px;
+  height: 198px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 16px;
+  border-radius: 2px;
+  border: 2px solid #0d060a;
 }
 .features-img {
-  margin: auto;
+  width: 307px;
+  height: 76px;
+  padding: 16px 113px;
+  background: #f14d36;
+  border-bottom: 2px solid #0d060a;
+  border-right: 2px solid #0d060a;
+}
+.features-img-two {
+  background: #3df331;
 }
 .features-text {
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  padding: 10px 24px;
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    height: 978px;
+    height: 933px;
 
-    padding: 160px 160px 0;
+    padding: 180px 220px 0;
     margin: auto;
-    background-image: url("/image/features/Advantages\ \(1\).png");
+    background-image: url("/img/features/Advantages\ \(1\).png");
   }
   .features-list {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: start;
-    flex-wrap: wrap;
-    height: 800px;
-  }
-  .features-item {
-    width: 544px;
-
+    padding-top: 75px;
     display: flex;
     flex-direction: row;
+    gap: 32px;
     align-items: start;
-    gap: 16px;
-  }
-  .features-img {
-    margin: 0;
-  }
-  .features-text {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
   }
 }
 .about-ready {
   padding: 80px 16px 0px;
   margin: auto;
   width: 375px;
-  height: 762px;
+  height: 710px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about-ready/CTA.png");
+  background-image: url("/img/about-ready/CTA.png");
 }
 .about-ready-title {
-  font-family: Nunito;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 36.4px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fea900;
 }
 .about-ready-text {
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 27px;
   text-align: center;
   text-underline-position: from-font;
@@ -754,34 +688,29 @@ a {
 
 @media screen and (min-width: 1200px) {
   .about-ready {
-    padding: 160px 352px 0;
+    padding: 80px 352px 0;
     margin: auto;
     width: 1440px;
-    height: 738px;
-
+    height: 513px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/image/about-ready/How\ to\ play.png");
+    background-image: url("/img/about-ready/CTA\ \(1\).png");
   }
   .about-ready-title {
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 36.4px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .about-ready-text {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -790,29 +719,34 @@ a {
   }
 }
 .footer {
-  background: rgba(105, 58, 212, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/footer/Footer_mob.png");
+  width: 375px;
+  height: 225px;
+  margin: auto;
 
-  color: rgba(255, 255, 255, 1);
-  padding: 80px 54px 16px;
+  padding: 75px 64px 24px;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 80px;
+  justify-content: end;
+  align-items: end;
+  gap: 45px;
 }
 
 .footer-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  align-items: start;
+  align-items: end;
 
-  gap: 4px;
+  gap: 16px;
 }
 .footer-text {
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -821,34 +755,47 @@ a {
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: #0d060a;
 }
 
 .footer-copyright {
-  font-family: Nunito;
+  font-family: Montserrat;
   font-size: 11px;
   font-weight: 400;
   line-height: 16.5px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 80px 0px 14px;
+    background-image: url("/img/footer/Footer.png");
+    width: 1440px;
+    height: 225px;
+
+    margin: auto;
+
+    padding: 75px 427px 30px 766px;
   }
   .footer-container {
-    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 32px;
   }
 
   .footer-wrapper {
-    gap: 4px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+
+    gap: 16px;
   }
   .footer-text {
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -858,10 +805,10 @@ a {
   }
 
   .footer-copyright {
-    font-family: Nunito;
-    font-size: 13px;
+    font-family: Montserrat;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 19.5px;
+    line-height: 18px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -873,21 +820,22 @@ a {
   padding: 124px 32px 116px;
 }
 .policy-terms-title {
-  font-family: Paytone One;
+  font-family: Gasoek One;
   font-size: 32px;
   font-weight: 400;
   line-height: 41.6px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(253, 205, 0, 1);
+
+  color: #fea900;
 }
 
 .policy-terms-text {
-  font-family: Nunito;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 28.6px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -895,10 +843,10 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -906,10 +854,10 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -921,14 +869,13 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
   display: flex;
   flex-direction: column;
 }
@@ -937,10 +884,10 @@ a {
   list-style-type: disc;
 
   padding-left: 25px;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -950,7 +897,7 @@ a {
   text-decoration: none;
 }
 .email-link-color {
-  color: rgba(255, 255, 255, 1);
+  color: #0d060a;
 }
 @media screen and (min-width: 1200px) {
   .policy-terms-container {
@@ -958,19 +905,19 @@ a {
     align-items: start;
   }
   .policy-terms-title {
-    font-family: Paytone One;
-    font-size: 48px;
+    font-family: Gasoek One;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 62.4px;
+    line-height: 52px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .policy-terms-text {
-    font-family: Nunito;
+    font-family: Montserrat;
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 36.4px;
     text-align: left;
     text-underline-position: from-font;
@@ -979,19 +926,19 @@ a {
     padding-top: 40px;
   }
   .policy-terms-texts {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .policy-terms-text-one {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -1002,10 +949,10 @@ a {
     list-style-type: disc;
 
     padding: 20px 0 20px 25px;
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -1019,10 +966,10 @@ a {
 
     padding-left: 25px;
 
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
