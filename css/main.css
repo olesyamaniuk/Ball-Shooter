@@ -1,0 +1,1030 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&display=swap");
+
+:root {
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: rgba(28, 117, 255, 1);
+
+  color: rgba(255, 255, 255, 1);
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button:hover {
+  scale: 120%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.header.is-open .header__background {
+  left: 0;
+}
+.header__button-wrapper {
+  margin-left: auto;
+}
+.header__icon {
+  display: none;
+}
+
+.header__icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.header__icon--menu {
+  display: block;
+}
+
+.header__icon-button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__icon-button.is-open .header__icon--close {
+  display: block;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: transparent;
+  display: flex;
+  height: 80px;
+  background: rgba(105, 58, 212, 1);
+}
+.header__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+
+  z-index: -1;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+  background: rgba(105, 58, 212, 1);
+}
+.header.is-open .header__background {
+  left: 0;
+}
+.header__button-wrapper {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.policy-terms-header__button-wrapper {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__icon {
+  display: none;
+}
+.header__icon-button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.header__icon--menu {
+  display: block;
+}
+
+.header__icon-button.is-open .header__icon--menu {
+  display: none;
+}
+
+.header__icon-button.is-open .header__icon--close {
+  display: block;
+}
+
+.navigation {
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px 16px;
+  position: relative;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+
+  top: 130px;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: 457px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 999;
+
+  padding: 0px 32px;
+
+  border-radius: 0px 0px;
+  gap: 32px;
+  background: rgba(105, 58, 212, 1);
+}
+.navigation__list.is-open {
+  right: 0;
+}
+.navigation__link {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  text-decoration: none;
+  color: #fff7d8;
+}
+
+.header.is-open {
+  background-color: transparent;
+}
+.navigation-img {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-img {
+    display: flex;
+  }
+  .policy-terms-header__icon--menu {
+    display: none;
+  }
+  .header-title {
+    margin-right: 420px;
+  }
+  .header {
+    width: 100%;
+
+    height: 80px;
+    padding: 10px 20px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+  }
+  .header__background {
+  }
+
+  .header__icon-button {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+
+    flex-direction: row;
+
+    flex: 1;
+    padding: 0;
+
+    width: 1440px;
+    margin: auto;
+  }
+  .navigation__list {
+    background-color: transparent;
+    flex-direction: row;
+    display: flex;
+    position: static;
+    width: 1400px;
+    margin: auto;
+
+    padding-block: 0;
+    flex: 1;
+    gap: 61px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation__link {
+    display: flex;
+
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    text-decoration: none;
+  }
+  .navigation__link:hover,
+  .navigation__link:focus {
+    background: transparent;
+  }
+  .header__icon-home-img {
+    display: none;
+  }
+  .navigation__item-desk {
+    display: none;
+  }
+}
+
+.home {
+  width: 375px;
+  height: 812px;
+
+  padding: 120px 16px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/home/Hero.png");
+  margin: auto;
+}
+.home-title {
+  font-family: Paytone One;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 292px;
+}
+
+.home__google-button_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    width: 1440px;
+    height: 759px;
+
+    padding: 160px;
+    background-image: url("/image/home/Hero\ \(1\).png");
+  }
+
+  .home-title {
+    font-family: Paytone One;
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 114.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 803px;
+    padding-bottom: 108px;
+  }
+
+  .home__google-button_link {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+}
+.about {
+  padding: 80px 16px 0px;
+  margin: auto;
+  width: 375px;
+  height: 917px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/about/About\ the\ App.png");
+}
+
+.about-title {
+  font-family: Paytone One;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 160px 160px 0;
+    margin: auto;
+    width: 1440px;
+    height: 810px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-image: url("/image/about/About\ the\ App\ \(1\).png");
+  }
+
+  .about-title {
+    font-family: Paytone One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .about-text {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 80px 0 0;
+    width: 448px;
+  }
+}
+
+.play {
+  width: 375px;
+  height: 509px;
+
+  margin: auto;
+  padding: 80px 16px 0;
+}
+.play {
+  position: relative;
+}
+
+.play::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/image/play/Reviews\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 1;
+}
+
+.play {
+  position: relative;
+  z-index: 2;
+}
+.play-list {
+  padding-top: 40px;
+}
+.play-item {
+  width: 327px;
+  height: 147px;
+  padding: 0px 32px 24px 32px;
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin: 0 8px;
+}
+.play-text-bold {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 263px;
+  height: 35px;
+  padding: 4px 0px;
+  border-radius: 12px;
+  background: rgba(116, 4, 141, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-top: none;
+}
+
+.play-text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .play {
+    width: 1440px;
+    height: 684px;
+    padding: 160px 160px 0;
+  }
+  .play::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/image/play/Reviews\ \(3\).png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+  .play-list {
+    padding-top: 80px;
+  }
+  .play-item {
+    width: 352px;
+    height: 159px;
+    padding: 0px 32px 24px 32px;
+    border-radius: 24px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin: 0 10px;
+  }
+  .play-text-bold {
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    width: 288px;
+    height: 38px;
+  }
+
+  .play-text {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-top: 16px;
+  }
+}
+
+.gallery {
+  width: 375px;
+  height: 754px;
+
+  margin: auto;
+  padding: 80px 15px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/gallery/Gallery.png");
+}
+
+.gallery__list {
+  width: 345px;
+  padding-top: 40px;
+
+  margin: auto;
+}
+.gallery__item {
+  width: 288px;
+  height: 512px;
+
+  overflow: hidden;
+  position: relative;
+  margin: 0 12px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slick-prev:before {
+  content: "←";
+  display: none;
+}
+.slick-next:before {
+  content: "→";
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .slick-prev:before {
+    content: url("/image/gallery/Arrow.png");
+    display: flex;
+    margin-left: -45px;
+  }
+  .slick-next:before {
+    content: url("/image/gallery/Arrow\ \(1\).png");
+    display: flex;
+  }
+  .gallery {
+    width: 1440px;
+    height: 808px;
+
+    margin: auto;
+    padding: 78px 160px 0;
+    background-image: url("/image/gallery/Gallery\ \(1\).png");
+  }
+
+  .gallery__item {
+    width: 288px;
+    height: 512px;
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 12px;
+  }
+
+  .gallery__list {
+    width: auto;
+    padding-top: 82px;
+  }
+}
+.features {
+  width: 375px;
+  height: 1634px;
+
+  padding: 80px 16px 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/features/Advantages.png");
+}
+.features-list {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+.features-item {
+  width: 343px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+.features-img {
+  margin: auto;
+}
+.features-text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    width: 1440px;
+    height: 978px;
+
+    padding: 160px 160px 0;
+    margin: auto;
+    background-image: url("/image/features/Advantages\ \(1\).png");
+  }
+  .features-list {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 800px;
+  }
+  .features-item {
+    width: 544px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+  }
+  .features-img {
+    margin: 0;
+  }
+  .features-text {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.about-ready {
+  padding: 80px 16px 0px;
+  margin: auto;
+  width: 375px;
+  height: 762px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/about-ready/CTA.png");
+}
+.about-ready-title {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36.4px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-ready-text {
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-ready {
+    padding: 160px 352px 0;
+    margin: auto;
+    width: 1440px;
+    height: 738px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/image/about-ready/How\ to\ play.png");
+  }
+  .about-ready-title {
+    font-family: Nunito;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    background: linear-gradient(180deg, #fdcd00 0%, #ff8c00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about-ready-text {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 30px 0 0px;
+  }
+}
+.footer {
+  background: rgba(105, 58, 212, 1);
+
+  color: rgba(255, 255, 255, 1);
+  padding: 80px 54px 16px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  align-items: start;
+
+  gap: 4px;
+}
+.footer-text {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-copyright {
+  font-family: Nunito;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 80px 0px 14px;
+  }
+  .footer-container {
+    gap: 80px;
+  }
+
+  .footer-wrapper {
+    gap: 4px;
+  }
+  .footer-text {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .footer-copyright {
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.policy-terms-container {
+  flex-direction: column;
+  align-items: start;
+  padding: 124px 32px 116px;
+}
+.policy-terms-title {
+  font-family: Paytone One;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(253, 205, 0, 1);
+}
+
+.policy-terms-text {
+  font-family: Nunito;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 20px;
+}
+.policy-terms-texts {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 8px;
+}
+.policy-terms-text-one {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding-top: 20px;
+}
+
+.terms-list {
+  list-style-type: disc;
+
+  padding: 20px 0 20px 25px;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-lists {
+  list-style-type: disc;
+
+  padding-left: 25px;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+.email-link-color {
+  color: rgba(255, 255, 255, 1);
+}
+@media screen and (min-width: 1200px) {
+  .policy-terms-container {
+    padding: 186px 80px 116px;
+    align-items: start;
+  }
+  .policy-terms-title {
+    font-family: Paytone One;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .policy-terms-text {
+    font-family: Nunito;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding-top: 40px;
+  }
+  .policy-terms-texts {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .policy-terms-text-one {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-top: 30px;
+  }
+
+  .terms-list {
+    list-style-type: disc;
+
+    padding: 20px 0 20px 25px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .terms-lists {
+    list-style-type: disc;
+
+    padding-left: 25px;
+
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
